@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+:root {
+
+    --red-500: #ef4444;
+    --red-600: #dc2626;
+    --red-700: #b91c1c;
+
+    --slate-50: #f8fafc;
+    --slate-900: #0f172a;
+
+    --indigo-400: #818cf8;
+    --indigo-500: #6366f1;
+    --indigo-600: #4f46e5;
+    --indigo-700: #4338ca;
+}
+
+.btn-indigo {
+    background-color: var(--indigo-700) !important;
+    color: var(--slate-50);
+    transition: all .5s;
+}
+
+.btn-indigo:hover {
+    background-color: var(--indigo-500) !important;
+    transition: all .3s;
+}
+
+.btn-red {
+    background-color: var(--red-700) !important;
+    color: var(--slate-50);
+    transition: all .5s;
+}
+
+.btn-red:hover {
+    background-color: var(--red-500) !important;
+    transition: all .3s;
+}
+
+.btn {
+    padding: 0px 20px;
+    border: none;
+    max-width: 100%;
+    transition: all .5s;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    gap: 0 5px;
+    border-radius: 0.125rem;
+    cursor: pointer;
+}
+
+.card {
+    background-color: var(--white-pure);
+    max-width: 100%;
+    padding: 20px;
+    border: none;
+    box-shadow: 0 2px 18px 1px rgb(49 53 72 / 10%);
+    border-radius: .25rem;
+    background-color: #fff;
+}
+
+i {
+    font-size: 16px !important;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(0, 0, 0, .7) 0%, rgb(0, 0, 0, .7) 100%), url('../images/helpdesk-bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    gap: 20px;
+}
+
+main .formulario-contato {
+    display: flex;
+    flex-direction: column;
+    min-width: 550px;
+    gap: 20px;
+}
+
+.solicitacao-aberta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 550px;
+    width: 100%;
+    min-height: 350px;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.form-grupo input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--indigo-700) !important;
+
+}
+
+.form-grupo textarea {
+    border: 1px solid var(--indigo-700) !important;
+
+}
+
+.form-grupo label {
+    font-size: 15px !important;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+    outline: 0 !important;
+    font-size: 13px !important;
+    padding: 5px;
+}
+
+.form-big-grupo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100% !important;
+}
+
+main .solicitacao-aberta {
+    min-width: 550px;
+}
+
+.error {
+    color: var(--red-500);
+}
+
+small {
+    font-size: 12px;
+}
+
+small,
+label,
+p {
+    font-size: 15px !important;
+    font-weight: 300 !important;
+}
